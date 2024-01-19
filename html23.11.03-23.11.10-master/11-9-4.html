@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일연습</title>
+    <style type="text/css">
+        li {
+            font-size: 25px;
+        }
+
+        ul li {
+            font-size: 50px;
+        }
+
+        ol li {
+            color: red;
+        }
+
+        .list_1 li {
+            color: blue;
+        }
+    </style>
+</head>
+<!-- 1) ul안에 있는 li에만 스타일을 지정하려면 
+    ul 안에있는 li들에 class 네임을 줘도 되지만
+    그 갯수가 많으면 힘듬
+    그래서 ul li{}라고 쓰면 ul안의 li에만 스타일 지정 가능
+    2) ul 중에서도 아래있는 ul의 li에만 스타일 주고 싶으면
+    아래 ul에 클래스 이름을 주고 .클래스네임 li{}이라고 써줌 =ul.클래스네임 li{}
+    3)ul li는후손까지 스타일 영향을 주고
+    ul>li 자식까지만 스타일 영향을 줌
+-->
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+    </ol>
+
+    <ul class="list_1">
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+    </ul>
+
+    <ol>
+        <li>가장좋아하는 음식</li>
+        <ul>
+            <li>빵</li>
+            <li>떡 </li>
+            <li>과일</li>
+        </ul>
+        <li>가장좋아하는 노래</li>
+        <ul>
+            <li>가요</li>
+            <li>팝송</li>
+        </ul>
+    </ol>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 연습</title>
+    <!-- css내부 구조에서는 헤드에 전체적인 스타일을 먼저 걸어줌
+        스타일 줄 영역을 쓰고 중괄호{}로 열고 닫아줌
+    -->
+    <!-- 같은 h1 태그라도 특정 h1에 속성을 달리 주고 싶으면 
+        그 태그 안에 속성을 달리 줘도 되지만 또 명령어가 길어짐
+        클래스 연산자===> h1마다 클래스 이름을 지정해준다
+                    공백 불가, 숫자로 시작 안됨, 대소문자 구분함, 빼기나 언더바 삽입 가능
+                    여러개의 클래스를 가질 수 있는데 띄어쓰기로 구분
+                    예: <h1 class="head2 hh2"> 
+                    스타일 줄때는 .붙이고 스타일 준다 .head2{속성:값; 속성:값;}
+                    h1도 p가 같은 클래스네임이면 같이 스타일 적용된다
+                    head2라는 클래스네임 가진 h1에만 스타일 주고 싶으면 h1.head2{}
+        아이디 연산자===> 클래스 연산자랑 비슷한 속성을 가지나,
+                    전체문서에서 아이디네임은 하나만 존재하고 하나의 태그에는 하나의 id만
+                    하나의 태그에 id랑 class는 같이 줄 수 있음
+                    책갈피 기능에 주로 쓰임
+                    <p id=first_P>
+                    #head2{속성:값; 속성:값;}
+        -->
+    <style type="text/css">
+        body {
+            color: red;
+            background-color: gray;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: aqua;
+        }
+
+        h1.head2 {
+            color: darkmagenta;
+        }
+
+        .head2 {
+            color: blue;
+        }
+
+        p {
+            font-size: 22px;
+            color: brown;
+            background-color: burlywood;
+        }
+        
+            a {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>header-1</h1>
+    <h1 class="head2">header-1</h1>
+    <h1>header-1</h1>
+
+    <p class="head2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid quasi nisi sit eius at sed distinctio aliquam,
+        provident maiores, fugiat perspiciatis molestias, molestiae numquam voluptatem alias.
+        Officiis, sit! Unde,eaque.
+    </p>
+
+    <p id="first_p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid quasi nisi sit eius at sed distinctio aliquam,
+        provident maiores, fugiat perspiciatis molestias, molestiae numquam voluptatem alias.
+        Officiis, sit! Unde,eaque.
+    </p>
+
+    <a href="#">네이버</a>
+    <a href="#">구글</a>
+    <a href="#">다음</a>
+
+</body>
+
+</html>

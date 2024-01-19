@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록구조/인라인구조 연습</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        .box1 {
+            background-color: aqua;
+            width: 200px;
+            height: 100px;
+            margin: 100px auto;
+            border: solid pink 1px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: inline-block;
+
+        }
+
+        .p_1 {
+            background-color: blue;
+            width: 50%;
+            height: 100px;
+            margin: 50px auto;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        /* 물리적 크기(wh에 패딩 더한 값) 
+                    w200+p20+p20+b1+b1=242 
+                    h100+p20+p20+b1+b1=142
+                    그래서 보더까지 다한 물리적 크기를 정할 때
+                    box-sizing:border-box; 명령어를 쓴다 */
+
+        /* border-top-style: solid ;
+                    border-top-width: 3px;
+                    border-top-color: red; 
+                    => border-top : solid 3px red; */
+
+        /* border-right-style: solid ;
+                    border-right-width: 3px;
+                    border-right-color: red; 
+                     => border-right : solid 3px red;*/
+        /* border-bottom-style: solid ;
+                    border-bottom-width: 3px;
+                    border-bottom-color: red; 
+                     => border-bottom : solid 3px red;*/
+        /* border-left-style: solid ;
+                    border-left-width: 3px;
+                    border-left-color: red; 
+                     => border-left : solid 3px red;*/
+        /* => border : solid 3px red; */
+
+        .h_1 {
+            background-color: darkslateblue;
+            width: 600px;
+            height: 100px;
+            margin: 0 auto 100px;
+            padding: 10px 30px;
+            text-align: center;
+            display: none;
+            /*display: none; 구조를 그대로 두지만 안 보이게 해주는 명령어 */
+        }
+
+        a {
+            background-color: cornflowerblue;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 100px 30px;
+            padding: 100px 30px;
+        }
+
+        /* a태그는 w h 안 먹힘 margin,padding는 상하를 아무리 줘도 안 먹힘
+        인라인 구조인 a태그를 블록 구조로 바꿔주면 안 먹히는 명령어를 줄 수 있음 
+        명령어=> display:block;
+        w, h, margin,padding는 상하는 블럭처럼 명령을 주면서 
+        구조는 인라인 처럼 유지하려면
+        명령어=>display:inline-block;
+        마진 값 안 주면 기본 설정인 5px 떨어지게 들어옴 */
+        img {
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .bold{
+            background-color: goldenrod;width: 50px;height: 50px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 블록 -->
+    <div class="box1">box1</div>
+
+    <p class="p_1">홍길동</p>
+
+    <h1 class="h_1">이철수</h1>
+    <!-- 인라인 -->
+    <a href="#">네이버</a>
+    <a href="#">구글</a>
+    <a href="#">다음</a>
+
+    <img src="목련.jpg" alt="목련사진">
+    <img src="민들레.jpg" alt="민들레사진">
+
+    봉 <b class="bold">은</b> 지
+
+
+</body>
+
+</html>

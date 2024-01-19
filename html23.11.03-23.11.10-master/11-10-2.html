@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div박스연습</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 40%;
+            height: 200px;
+            background-color: rgba(137, 43, 226, 0.565);
+            display: inline-block;
+        }
+
+        .box2 {
+            width: 40%;
+            height: 200px;
+            background-color: rgba(127, 255, 212, 0.676);
+            display: inline-block;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 100px;
+            background-color: rgba(169, 169, 169, 0.455);
+            display: inline-block;
+            display: none;
+        }
+
+        /* 3번 박스 w 퍼센트를 20%주면 123박스 w 퍼센트를 합하면 100이여서 한 줄에 있을거라고 생각하지만
+        인라인구조는 사이가 자동적으로 5px오기 때문에 공간이 부족해서 3번 박스가 못 올라감 
+        1px라도 부족하면 올라갈 수 없음 */
+        .box4 {
+            width: 300px;
+            height: 100px;
+            background-color: coral;
+            display: inline-block;
+
+        }
+
+        .box5 {
+            width: 300px;
+            height: 100px;
+            background-color: yellowgreen;
+            display: none;
+
+        }
+
+        .box6 {
+            width: 200px;
+            height: 100px;
+            background-color: cornflowerblue;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .box7 {
+            width: 50%;
+            height: 100px;
+            background-color: fuchsia;
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .box {
+            width: 810px;
+            height: 200px;
+            border: 1px red solid;
+            /* box-sizing: border-box; */
+        }
+
+        .box8 {
+            width: 400px;
+            height: 200px;
+            border: 5px black solid;
+            display: inline-block;
+            box-sizing: border-box;
+
+        }
+
+        .box9 {
+            width: 400px;
+            height: 200px;
+            border: 1px green solid;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .g {
+            display: block;
+            width: 400px;
+            height: 200px;
+            border: solid 2px pink;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+
+    <div class="box7">box7</div>
+
+    <div class="box">
+        <div class="box8">box8</div>
+        <div class="box9">box9</div>
+    </div>
+    <!-- box close-->
+    <a class="g" href="#">네이버</a>
+</body>
+
+</html>

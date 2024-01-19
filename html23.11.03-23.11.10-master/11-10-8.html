@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .main_1 {
+            width: 600px;
+            border: 1px solid teal;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .main_1 li {
+            border: 1px solid skyblue;
+            float: left;
+            width: 20%;
+            text-align: center;
+            line-height: 50px;
+        }
+        .main_2{
+            width: 1000px;
+            border: 1px blueviolet solid;
+            overflow: hidden;
+            margin: 10px auto;
+
+        }
+        .main_2 li{
+            border: 1px red solid;
+            float: right;
+            width: calc(998px / 5 - 20px );
+            /* -20은 마진 좌우 계산해서 20 뺴주는 것임 */
+            line-height: 50px;
+            text-align: center;
+            margin: 0 10px;
+        }
+        .main_3{
+            width: 500px;
+            /* border: 1px solid black; */
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        
+        .main_3 li{
+            width: calc(498px / 5 - 20px);
+            float: left;
+            border: 1px solid teal;
+            background : pink;
+            border-radius: 0 30px;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="main_1">
+        <li>main-1</li>
+        <li>main-2</li>
+        <li>main-3</li>
+        <li>main-4</li>
+        <li>main-5</li>
+    </ul>
+    <ul class="main_2">
+        <li>main-1</li>
+        <li>main-2</li>
+        <li>main-3</li>
+        <li>main-4</li>
+        <li>main-5</li>
+    </ul>
+    <ul class="main_3">
+        <li>main-1</li>
+        <li>main-2</li>
+        <li>main-3</li>
+        <li>main-4</li>
+        <li>main-5</li>
+    </ul>
+</body>
+
+</html>

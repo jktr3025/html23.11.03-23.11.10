@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조연습</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            /* ul이나 ol에 padding 걸면 안 보임
+            사라진건 아니고 모니터 밖에 있음 */
+            list-style: none;
+            /* 패딩 안주고 리스트-스타일로 블릭기호 없앨 수 있음 */
+            box-sizing: border-box;
+        }
+
+        h1 {
+            width: 500px;
+            height: 100px;
+            /* background-color: white; */
+            border: 3px black solid;
+            /* w랑 보더 합하면 506이지만 
+            제일 위에서 박스사이징-보더 박스 줬으니 전체 크기 500 */
+            text-align: center;
+            /* 좌우의 중간 */
+            line-height: 100px;
+            /* 상하의 줄간격으로 
+            px로 줘도 되고
+            1이 글자크기 기준으로 100% */
+            /* 피그마랑 태그는 줄간격이 텍스트와 위,아래 합한 값임 */
+            display: inline-block;
+
+        }
+
+        p {
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            padding: 20px 0;
+            background-color: hotpink;
+            display: inline-block;
+        }
+
+        ul {
+            width: 100%;
+            border: 1px blue solid;
+            text-align: center;
+            /* 인라인 구조에서 텍스트-얼라인은
+            ul 안의 구조물과 텍스트가 같은 기준으로 정렬됨 
+            (여러 줄일때는 안됨)*/
+            margin: 10px auto;
+        }
+
+        ul>li {
+            width: 150px;
+            height: 50px;
+            background-color: aquamarine;
+            display: inline-block;
+        }
+
+        /* ul li는 li의 후손들에게까지 영향을 주고
+        ul>li는 li의 후손이 있어도 자식인 li에게만 영향을 준다 */
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: blueviolet;
+            text-align: center;
+
+        }
+
+        .list {
+            width: 80%;
+            border: 1px blue solid;
+            /* background-color: darkkhaki; */
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .list .item {
+            width: 100px;
+            height: 50px;
+            background-color: chartreuse;
+            display: inline-block;
+            /* 아이템의 부모인 list에게 텍스트-얼라인의 속성이 상속되어 있으므로 따로 안 줘도 됨 */
+            line-height: 50px;
+            /* 상하 중간으로 오게 하려면 구조물의 크기가 동일한 크기로 주면 된다
+   (여러줄일 때는 안됨) */
+        }
+
+        a {
+            display: inline-block;
+            width: 300px;
+            height: 100px;
+            background-color: cyan;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            /* vertical-align: middle;
+            vertical-align: top;
+            vertical-align: bottom; */
+            vertical-align: baseline;
+
+        }
+
+        span {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            border: 3px red dashed;
+        }
+    </style>
+
+</head>
+<h1 class="head">구조연습</h1>
+
+<p class="p_1">파라그랩 연습 </p>
+
+<ul>
+    <li>리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+</ul>
+<div class="box">box</div>
+<div class="list">
+    <div class="item">item1</div>
+    <div class="item">item2</div>
+    <div class="item">item3</div>
+    <div class="item">item4</div>
+    <div class="item">item5</div>
+</div><!-- list close -->
+
+<a href="#">하이미디어</a>
+<a href="#">네이버</a>
+
+<img src="누워있는 강아지.jpg" alt="누워있는 강아지">
+<span>인라인 구조 연습</span>
+
+<body>
+
+</body>
+
+</html>

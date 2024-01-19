@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div 상자</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+
+        }
+
+        .bigbox {
+            width: 500px;
+            background-color: pink;
+            border: 1px black solid;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: -5px -5px 18px gray;
+            /* box-shadow: x축값/y축값/블러값/컬러 */
+        }
+
+        .box1,
+        .box2 {
+            width: 100%;
+            /* height: 500px; 여백을 더 주고 싶으면 h 지정해도 되지만
+            지정 안해도 내용만큼 높이가 나타남 */
+            background-color: rgb(4, 80, 4);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            margin-bottom: 30px;
+        }
+
+        .p_1 {
+            font-size: 20px;
+            color: white;
+            font-weight: 200;
+        }
+
+        .s {
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px 10px;
+            box-sizing: border-box;
+        }
+
+        .s1 {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<!-- 한 줄 주석은 ctrl + /
+블록 주석은 alt + shift + a -->
+
+<body>
+    <div class="bigbox">
+
+        <div class="box1">
+            <p class="p_1">Pick from here</p>
+            <div class="s s1"> 1 </div>
+            <div class="s s2"> 2 </div>
+        </div> <!-- 박스 1 클로징 -->
+
+        <div class="box2">
+            <p class="p_1">Put it here</p>
+            <div class="s s1"> 3 </div>
+            <div class="s s2"> 4 </div>
+        </div> <!-- 박스2클로징 -->
+
+    </div> <!-- 빅박스 클로징 -->
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        /* ul,ol,li 관련 블릭기호 없애줌 */
+        a {
+            color: black;
+            /* 특정 컬러를 지정하거나 color: inherit; */
+            text-decoration: none;
+        }
+
+        /* 보통 reset 할 때 넣어줌*/
+        .list {
+            border: 1px solid green;
+            text-align: center;
+        }
+
+        .list li {
+            width: 150px;
+            height: 50px;
+            border: 1px yellowgreen solid;
+            text-align: center;
+            /* .list에서 텍스트-얼라인 줌으로써 
+            박스들과 텍스트를 이미 센터로 잡아주어서 따로 안 줘도 됨 */
+            line-height: 50px;
+            display: inline-block;
+        }
+
+        .list1 {
+            width: 500px;
+            border: 1px solid red;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .list1 li {
+            width: calc(498px / 5);
+            height: 50px;
+            /* 리셋에서 박스 사이징-보더 박스로 잡아놔서 보더 제외한 
+            w가 498인데 5로 나누려면 번거로움 
+            그래서 자체적으로 계산기를 써줌
+            사칙연산 부호 앞뒤로 공백이 꼭 있어야 하고 단위 꼭 써야함
+            1) width : 20%
+            2) width: calc(498px / 5); 
+            3) width : calc(100% / 5)로 써도됨
+            */
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid pink;
+            float : left ;
+/* 자식을 부모로부터 띄워서 왼쪽또는 오른쪽으로 차곡차곡 쌓아주는 명령어 
+left 또는 right만 있음 */
+/* float: right;는 순번이 거꾸로 가게되서 잘 안 씀
+자식이 떨어져있는 형태이므로 자식의 높이인 50을 포함하지 않게 됨
+다음 내용이 오게되면 가려져지게 됨
+그래서 따로 높이를 주거나 
+오버플로우-히든을 줘서 자식의 값을 인식하게됨*/
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+    </ul><!-- list close -->
+
+    <ul class="list1">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+        <li>list-5</li>
+    </ul><!-- list1 close -->
+
+</body>
+
+</html>

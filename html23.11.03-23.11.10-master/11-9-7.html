@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+body{
+    /* margin-top: 50px;
+margin-bottom: 60px;
+margin-left: 30px;
+margin-right: 20px;  */
+/* margin:50px 20px 60px 30px; 위 50 우20 아래 60 왼 30
+margin:50px 20px  30px; 위 50 좌우 20 아래 30
+margin:50px 30px; 위아래50 좌우30
+margin:30px; 전체30 */
+margin: 0px;
+}
+div{
+    width: 300px; height: 300px;
+    border: 1px blue solid;
+}
+.box1{
+    margin: 100px;
+}
+/* 박스 1의 아래 마진이랑 박스 2의 위 마진 50이 합쳐서 150 되는게 아니라
+전체가 100이고 그 안에 2의 마진 50이 포함된다 */
+.box2{
+    margin: 50px 100px;
+}
+.box3{
+    margin: 100px 150px 50px; 
+}
+.box4{
+    margin: 100px auto ;
+    text-align: center;
+}
+/* auto : 창 크기가 변해도 중앙에 오도록하는 명령어 (넓이에 대해 중앙)*/
+
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <h1 class="header1"></h1>
+</body>
+
+</html>

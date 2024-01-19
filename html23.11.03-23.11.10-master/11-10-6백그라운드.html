@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style type="text/css">
+        body {
+            /* height: 3000px;
+            background: #eee url("달리는 강아지.jpg") no-repeat;
+            background-attachment: fixed; */
+            /* 스크롤이 내려가더라도 사진이 따라 움직이지 않도록 하는 명령어 */
+            /* background: #eee url("달리는 강아지.jpg") no-repeat fixed; 이렇게 써줘도 됨  */
+            /* background-position: center top;  */
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            display: inline-block;
+            border: 1px black solid;
+        }
+
+        .top {
+            /* width: 1000px;
+            height: 700px; */
+            /* background-color: lightslategrey; */
+            /* background-image: url("채송화.jpg"); */
+            /* 배경을 이미지로 채워주는 명령어 */
+            /* background-repeat: no-repeat; */
+            /* 기본값은 repeat인데 1번만 하고 끝내라는 뜻  */
+            /* background-repeat: repeat-x; 가로축으로만 반복  */
+            /* background-repeat: repeat-x;세로축으로만 반복  */
+            /* background-position: right bottom; */
+            /* 기본값은 왼쪽 상단에 붙는데 이미지를 붙이고 싶은 대로 적어줌
+            top/bottom - center - left/right
+            정중앙 : center center 
+            또는 x축 y축 시작 위치를 지정해줄 수 있음 예 - 50px 30px */
+            /* background-size: 100% 50%; */
+            /* background-size: 100px 50px; */
+            /* 이미지의 사이즈 변경 */
+
+            /* background-size: cover; */
+            /* 가진 이미지가 잘리더라도 내가 지정한 크기게 맞게 */
+            /* background-size: contain; */
+            /* 가진 이미지를 자르지 않고 여백을 남김 */
+            /* background: url("수련.jpg");
+            background: gray;
+            background: red url("수련.jpg") no-repeat center top 300px; */
+            /* 백그라운드 관련 속성을 따로 쓰지 않고 한 번에 명령어 줄 수 있음
+단, 순서 중요하고
+/300이면 사이즈 300이면 포지션
+사이즈랑 포지션 헷갈리면 이 둘은 따로 명령줘도 됨*/
+            /* background-position: -50px -50px; */
+            /*포지션 마이너스 값주면 배경이 모니터 밖으로 빠짐 */
+            background: url("수련.jpg") no-repeat;
+            background-size: 50%;
+            border-radius : 50px;
+        }
+        .middle{
+            overflow: hidden;
+            border-radius: 150px;
+            /*미들은 백그라운드로 이미지를 넣어준게 아니라 상자 안에 이미지를 준 것  
+            오버 플로어-히든을 안하면 이미지가 넘쳐서 라디우스 효과나 텍스트를 가림 */
+        }
+        .bottom{
+            background: #ffe url("연꽃.jpg") no-repeat left bottom / 100px 100px;
+            border-radius: 150px 0;
+        }
+        .line{
+            /* width: 50px;height: 50px; */
+            width: 0;
+            /* background : blueviolet ; */
+
+            /* border-top: 10px solid red ;
+            border-right: 10px solid blue;
+            border-left: 10px solid teal;
+            border-bottom: 10px solid yellow; */
+
+            /* border: 10px solid;
+            border-top-color:  red ;
+            border-right-color: white;
+            border-left-color:  white;
+            border-bottom-color: white; */
+
+            border: 10px solid;
+            border-color:  red white white white ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box top">상</div>
+
+    <div class="box middle">
+        <img src="달리는 강아지.jpg" alt="달리는 강아지">
+    </div>
+
+    <div class="box bottom">하</div>
+
+    <div class="line"></div>
+</body>
+
+</html>

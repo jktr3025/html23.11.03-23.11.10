@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div tag</title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: green;
+            background-color: #fc1;
+            background-color: rgb(255, 50, 0);
+            background-color: rgba(255, 0, 0, 0.5);
+            background-color: #ff0a;
+            background-color: hsl(0, 77%, 42%);
+            border-style: solid;
+            border-width: 2px;
+            border-color: blue;
+            border: solid black 2px;
+            border-top-color: pink;
+            border-top-width: 5px;
+            border-top-style: solid;
+            border-bottom-color: green;
+            border-bottom-width: 10px;
+            border-bottom-style: double;
+            border-left-color: chocolate;
+            border-left-width: 20px;
+            border-left-style: dashed;
+            border-right-color: #424;
+            border-right-width: 16px;
+            border-right-style: dotted;
+            /* 위 명령어 3개 합쳐서 한 번에 아래처럼 작성할 수 있음 */
+            border-right: teal 5px solid;
+        }
+
+        h1 {
+            border-color: black;
+            border-width: 10px;
+            border-style: groove;
+            height: 50px;
+        }
+
+        h2 {
+            border-color: pink;
+            border-width: 10px;
+            border-style: inset;
+            height: 50px;
+        }
+
+        h3 {
+            border-color: red goldenrod skyblue palevioletred;
+            border-width: 5px 10px 4px 3px;
+            border-style: dotted dashed solid double;
+            height: 50px;
+        }
+
+        h4 {
+            border-color: red goldenrod palevioletred;
+            border-width: 5px 10px 4px 3px;
+            border-style: dotted dashed solid double;
+            height: 50px;
+        }
+
+        h5 {
+            border-color: red goldenrod;
+            border-width: 5px 10px 4px 3px;
+            border-style: dotted dashed solid double;
+            height: 50px;
+        }
+
+        p {
+            border-color: orange;
+            border-width: 10px;
+            border-style: outset;
+            height: 50px;
+        }
+    </style>
+</head>
+<!--div tag
+    : 의미 없이 넣어주는 태그
+    가장 보편적으로 많이 쓰는 태그
+    width는 지정 안하면 부모의 속성 그대로 따라옴 (보통 창 크기)
+    구역을 만들어 주고 싶어서 씀
+    포토샵에서 비어있는 레이어 같은 개념
+    .이름 + tab => 내가 지정한 클래스네임을 가진 div 태그 생성됨
+    #이름 + tab => 내가 지정한 아이디네임을 가진 div 태그 생성됨
+    h1태그도 h1.네임  tab => 클래스네임을 가진 h1 태그 생성됨
+    이 방법들이 더 빨리 클래스네임을 지정하면서 태그를 생성 할 수 있음
+    1) w300 + 탭/ h200 +탭 =>넓이 높이 빠르게 지정 가능
+    단위 생략하면 자동으로 px로 지정됨 (퍼센트는 p)
+    2) 동일 속성이 여러개면 가장 뒤에 적어준 속성이 적용된다
+    3) 컬러 주는 법 - 컬러명 / 16진법 / rgb / rgba (투명도 0~1이고 1이 투명도100% ) / hsl
+    16진법컬러에서 #4번째 자리까지만 써주기도 하는데 마지막 4번째 자리는 투명도를 의미 
+    hsl에서 1이 100%
+
+    모든 태그에서 공통
+    border 
+    -style 선 스타일 
+    solid (실선) dotted (점선) double(이중선) groove (그림자)
+    inset음각 outset 양각
+    -width 선두께
+    -color 선 색
+    이렇게 길게 쓰지 않고 border : 스타일 두께 컬러;
+    순서는 상관없으나 하나라도 빼면 안됨 (컬러는 빠져도 됨)
+    border-top-color: ; 위쪽 선의 색만 주는 명령어
+    **
+    효과를 줄 때 한 번에 4개 쓰면 왼쪽 위에서부터 시계 방향으로 효과가 들어감
+    3개 써있으면 중간 값이 좌우
+    2개 써있으면 첫 번째 값이 위아래, 두 번째 값이 좌우
+
+-->
+
+<body>
+    <div>1</div>
+    <div class="name">2</div>
+    <div id="korea">3</div>
+
+    <h1 class="ko">4</h1>
+    <h2 class="header2">5</h2>
+    <h3>6</h3> 
+        <h4>7</h4>
+            <h5>8</h5>
+            <p class="home_1">9</p>
+
+</body>
+
+</html>

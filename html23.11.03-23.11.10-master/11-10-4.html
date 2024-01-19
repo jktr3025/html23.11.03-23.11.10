@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div 상자 따라만들어보기</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+        }
+        .large{
+            width: 500px; 
+            background-color: cornflowerblue;
+            border: 1px black solid;
+            box-shadow: 5px 5px 10px gray;
+            margin: 20px; padding: 20px;
+        
+        }
+        .box{
+            width: 100%;
+            /* margin: 20px; */
+            background-color: chartreuse;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+ 
+        
+        .p_1{
+            font-size: 21px; color: white
+        }
+        .s1 , .s2{width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .s1{
+            margin-bottom: 20px;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <div class="large">
+        <div class="box box1">
+            <p class="p_1"> 좋아하는 음식 </p>
+            <div class="s1">과일</div>
+            <div class="s2">국</div>
+        </div><!-- 박스 닫음 -->
+        <div class="box box2">
+            <p class="p_1"> 좋아하는 노래 </p>
+            <div class="s1">트로트</div>
+            <div class="s2">가요</div>
+        </div><!-- 박스 닫음 -->
+    </div><!-- 라지박스 닫음 -->
+</body>
+
+</html>

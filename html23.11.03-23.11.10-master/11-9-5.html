@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일연습</title>
+    <style type="text/css">
+        body {
+            color: #444;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: plum;
+        }
+        a:hover{
+            color: darkgreen;
+            text-decoration: underline;
+            background-color: gold;
+        }
+        a:active{
+            color: deeppink;
+        }
+        h1:hover{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<!-- 
+1) a태그는 바디보다 상위 태그라서 따로 스타일 줘야함
+바디랑 같은 속성을 따르고 싶으면 color: inherit; (상속)
+여기서는 속성 순서가 중요함 
+a기본 태그와 호버를 가장 많이 씀
+2) 링크되어 있을 때  a:link{color: red;}
+3) 링크 클릭 후 되돌아 왔을 때 a:visited{color: red;}
+4) 링크 위에 마우스 포인트가 오버 또는 아웃 됐을 때 a:hover {color: red;}
+5) 마우스 포인트에 누르고 있는 동안 a:active {color: red;}
+6) 밑줄 상태 text-decoration: none / underline 등등
+7) 호버 기능은 a 태그 아니여도 h1 등 다양한 곳에 쓸 수 있다
+-->
+
+<body>
+    <a href="#">naver</a>
+    <a href="#">daum</a>
+    <a href="#">google</a>
+
+    <h1>header-1</h1>
+</body>
+
+</html>
